@@ -9,7 +9,7 @@ export default function Home() {
       <section className={`${styles.hero} container`}>
         <div className={styles.heroContent}>
           <h1 className={styles.title}>
-            Hi, I'm <br />
+            Hi, I&apos;m <br />
             <span className="gradient-text">Ulindu</span>
           </h1>
           <h2 className={styles.subtitle}>Software Engineer</h2>
@@ -42,7 +42,11 @@ export default function Home() {
               </span>
             </div>
 
-            <a href="Ulindu_CV.pdf" download className={styles.cvAction}>
+            <a
+              href="/Ulindu_Dakshitha_CV.pdf"
+              download="Ulindu_Dakshitha_CV.pdf"
+              className={styles.cvAction}
+            >
               <span className={styles.cvIcon}>↓</span>
               <span>Download CV</span>
             </a>
