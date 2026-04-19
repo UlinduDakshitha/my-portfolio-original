@@ -12,7 +12,7 @@ export default function Home() {
             Hi, I'm <br />
             <span className="gradient-text">Ulindu</span>
           </h1>
-          <h2 className={styles.subtitle}>Software Engineer</h2>
+          <h2 className={styles.subtitle}>Software Engineer bro</h2>
           <p className={styles.description}>
             Turning complex problems into elegant, scalable solutions using{" "}
             <strong style={{ color: "var(--text-primary)" }}>Next.js</strong> &{" "}
