@@ -1,22 +1,31 @@
-import styles from './page.module.css';
-import Link from 'next/link';
+import styles from "./page.module.css";
+import Link from "next/link";
+import Image from "next/image";
+import profilePhoto from "../assets/Gemini_Generated_Image_ryc8zqryc8zqryc8.png";
 
 export default function Home() {
   return (
     <div className={styles.homeContainer}>
       <section className={`${styles.hero} container`}>
-        <div className={`${styles.heroContent} animate-fade-in`}>
+        <div className={styles.heroContent}>
           <h1 className={styles.title}>
             Hi, I'm <br />
             <span className="gradient-text">Ulindu</span>
           </h1>
-          <h2 className={`${styles.subtitle} delay-1`}>
-            Software Engineer
-          </h2>
-          <p className={`${styles.description} delay-2`}>
-            Passionate about Full-Stack Web Development, <span style={{ color: 'var(--accent-purple)' }}>AI/ML/DL</span>, and <span style={{ color: 'var(--accent-cyan)' }}>DevOps</span>. I build scalable applications with modern technologies like React, Next.js, and Spring Boot.
+          <h2 className={styles.subtitle}>Software Engineer</h2>
+          <p className={styles.description}>
+            Turning complex problems into elegant, scalable solutions using{" "}
+            <strong style={{ color: "var(--text-primary)" }}>Next.js</strong> &{" "}
+            <strong style={{ color: "var(--text-primary)" }}>
+              Spring Boot
+            </strong>
+            . I am deeply passionate about pushing the boundaries of web
+            development by integrating{" "}
+            <span className="gradient-text">AI/ML</span> and automating
+            workflows through{" "}
+            <span style={{ color: "var(--accent-cyan)" }}>DevOps</span>.
           </p>
-          <div className={`${styles.actions} delay-3`}>
+          <div className={styles.actions}>
             <Link href="/projects" className="btn-primary">
               View My Work
             </Link>
@@ -24,22 +33,34 @@ export default function Home() {
               Contact Me
             </Link>
           </div>
-        </div>
 
-        <div className={`${styles.heroVisual} animate-fade-in delay-2`}>
-          <div className={styles.imageWrapper}>
-            {/* Using a sleek geometric avatar placeholder until photo is provided/linked */}
-            <div className={`${styles.photoPlaceholder} glass`}>
-              <div className={styles.glowEffect}></div>
-              <svg xmlns="http://www.000000.com/" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className={styles.userIcon}>
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
+          <div className={`${styles.cvCard} glass`}>
+            <div className={styles.cvCopy}>
+              <span className={styles.cvBadge}>Download CV</span>
+              <span className={styles.cvLine}>
+                Quick snapshot of my profile and experience.
+              </span>
             </div>
 
+            <a href="/cv" download className={styles.cvAction}>
+              <span className={styles.cvIcon}>↓</span>
+              <span>Download CV</span>
+            </a>
+          </div>
+        </div>
 
-
-
+        <div className={styles.heroVisual}>
+          <div className={styles.imageWrapper}>
+            <div className={`${styles.photoPlaceholder} glass`}>
+              <Image
+                src={profilePhoto}
+                alt="Ulindu profile photo"
+                fill
+                sizes="(max-width: 992px) 300px, 380px"
+                style={{ objectFit: "cover", borderRadius: "30px" }}
+                priority
+              />
+            </div>
           </div>
         </div>
       </section>
