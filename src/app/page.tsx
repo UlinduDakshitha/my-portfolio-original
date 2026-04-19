@@ -42,7 +42,7 @@ export default function Home() {
               </span>
             </div>
 
-            <a href="/cv" download className={styles.cvAction}>
+            <a href="Ulindu_CV.pdf" download className={styles.cvAction}>
               <span className={styles.cvIcon}>↓</span>
               <span>Download CV</span>
             </a>
