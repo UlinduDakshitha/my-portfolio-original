@@ -1,0 +1,11 @@
+<svg xmlns="http://www.000000.com/" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="20" fill="#0b0d11" />
+  <circle cx="50" cy="50" r="40" stroke="url(#grad1)" stroke-width="8" fill="none" />
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="50" y="53" font-family="system-ui, sans-serif" font-size="40" font-weight="900" fill="#e2e8f0" text-anchor="middle" dominant-baseline="middle">UB</text>
+</svg>
