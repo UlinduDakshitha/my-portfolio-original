@@ -43,7 +43,7 @@ export default function Home() {
             </div>
 
             <a
-              href="/Ulindu_Dakshitha_CV.pdf"
+              href="/cv"
               download="Ulindu_Dakshitha_CV.pdf"
               className={styles.cvAction}
             >
