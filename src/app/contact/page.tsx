@@ -19,7 +19,7 @@ export default function Contact() {
             className={`${styles.card} glass hover-lift`}
           >
             <div className={styles.iconBox}>
-              <img src="/email.svg" alt="Email" />
+              <img src="/C:\Users\ASUS-PC\OneDrive\Desktop\my projects\my originalportfolio\public\new-post.jpg" alt="Email" />
             </div>
             <h3>Email</h3>
             <p>ulindudakshitha001@gmail.com</p>
@@ -30,7 +30,7 @@ export default function Contact() {
             className={`${styles.card} glass hover-lift`}
           >
             <div className={styles.iconBox}>
-                <img src="/phone.svg" alt="Phone" />
+                <img src="C:\Users\ASUS-PC\OneDrive\Desktop\my projects\my originalportfolio\public\pngtree-phone-icon-isolated-on-abstract-background-png-image_1847735.jpg" alt="Phone" />
             </div>
             <h3>Phone</h3>
             <p>+94 71 702 8242</p>
