@@ -38,7 +38,9 @@ export default function Contact() {
             rel="noopener noreferrer"
             className={`${styles.card} glass hover-lift`}
           >
-            <div className={styles.iconBox}>💼</div>
+            <div className={styles.iconBox}>
+              <img src="/linkedin.svg" alt="LinkedIn" />
+            </div>
             <h3>LinkedIn</h3>
             <p>Ulindu Dakshitha Bandara</p>
           </a>
