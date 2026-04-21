@@ -51,7 +51,9 @@ export default function Contact() {
             rel="noopener noreferrer"
             className={`${styles.card} glass hover-lift`}
           >
-            <div className={styles.iconBox}>💻</div>
+            <div className={styles.iconBox}>
+              <img src="/github.svg" alt="GitHub" />
+            </div>
             <h3>GitHub</h3>
             <p>github.com/UlinduDakshitha</p>
           </a>
