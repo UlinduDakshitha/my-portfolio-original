@@ -35,21 +35,29 @@ export default function Home() {
           </div>
 
           <div className={`${styles.cvCard} glass`}>
-            <div className={styles.cvCopy}>
-              <span className={styles.cvBadge}>Download CV</span>
-              <span className={styles.cvLine}>
-                Quick snapshot of my profile and experience.
-              </span>
+            <div className={styles.cvTopline}>
+              <span className={styles.cvBadge}>CV / PDF</span>
+              <span className={styles.cvMeta}>Updated 2026</span>
             </div>
 
-            <a
-              href="/cv"
-              download="Ulindu_Dakshitha_CV.pdf"
-              className={styles.cvAction}
-            >
-              <span className={styles.cvIcon}>↓</span>
-              <span>Download CV</span>
-            </a>
+            <div className={styles.cvCopy}>
+              <h3 className={styles.cvTitle}>Download my CV</h3>
+              <p className={styles.cvLine}>
+                A concise snapshot of my skills, experience, and projects.
+              </p>
+            </div>
+
+            <div className={styles.cvFooter}>
+              <span className={styles.cvHint}>Fast access • PDF format</span>
+              <a
+                href="/cv"
+                download="Ulindu_Dakshitha_CV.pdf"
+                className={styles.cvAction}
+              >
+                <span className={styles.cvIcon}>↘</span>
+                <span>Download CV</span>
+              </a>
+            </div>
           </div>
         </div>
 
