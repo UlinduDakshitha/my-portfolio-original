@@ -14,7 +14,7 @@ export default function About() {
                 {/* Education & Experience */}
                 <div className={`${styles.column} animate-fade-in delay-1`}>
                     <div className={`${styles.card} glass hover-lift`}>
-                        <h2 className={styles.cardTitle}>🎓 Education</h2>
+                        <h2 className={styles.cardTitle}>Education</h2>
 
                         <div className={styles.timelineItem}>
                             <div className={styles.timelineDot}></div>
@@ -32,7 +32,7 @@ export default function About() {
                     </div>
 
                     <div className={`${styles.card} glass hover-lift`}>
-                        <h2 className={styles.cardTitle}>💼 Experience</h2>
+                        <h2 className={styles.cardTitle}>Experience</h2>
 
                         <div className={styles.timelineItem}>
                             <div className={styles.timelineDot}></div>
@@ -55,7 +55,7 @@ export default function About() {
                 {/* Skills & Certifications */}
                 <div className={`${styles.column} animate-fade-in delay-2`}>
                     <div className={`${styles.card} glass hover-lift`}>
-                        <h2 className={styles.cardTitle}>🛠️ Technical Skills</h2>
+                        <h2 className={styles.cardTitle}>Technical Skills</h2>
 
                         <div className={styles.skillGroup}>
                             <h3>Languages & Frameworks</h3>
@@ -86,7 +86,7 @@ export default function About() {
                     </div>
 
                     <div className={`${styles.card} glass hover-lift`}>
-                        <h2 className={styles.cardTitle}>📜 Certifications</h2>
+                        <h2 className={styles.cardTitle}> Certifications</h2>
                         <ul className={styles.certList}>
                             <li>Postman API Fundamentals Student Expert — <span>Postman, 2026</span></li>
                             <li>Postman Essentials — <span>KodeKloud, 2026</span></li>
