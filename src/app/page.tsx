@@ -36,8 +36,8 @@ export default function Home() {
 
           <div className={`${styles.cvCard} glass`}>
             <div className={styles.cvTopline}>
-              <span className={styles.cvBadge}>CV </span>
-              <span className={styles.cvMeta}>Updated 2026</span>
+              <span className={styles.cvBadge}></span>
+              <span className={styles.cvMeta}></span>
             </div>
 
             <div className={styles.cvCopy}>
