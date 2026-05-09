@@ -21,7 +21,7 @@ export default function Projects() {
       description:
         "A marketplace platform for users to discover tattoo artists and studios, browse portfolios, and book appointments. Features 4-tier role-based access control and scalable APIs for bookings and consultations.",
       role: "Fullstack Developer",
-      tech: ["Next.js", "Java Spring Boot", "MySQL"],
+      tech: ["Next.js","TypeScript", "Java Spring Boot", "MySQL"],
       link: "https://github.com/stars/UlinduDakshitha/lists/inkmatch",
       delay: "delay-2",
     },
