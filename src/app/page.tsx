@@ -36,7 +36,7 @@ export default function Home() {
 
           <div className={`${styles.cvCard} glass`}>
             <div className={styles.cvTopline}>
-              <span className={styles.cvBadge}>CV / PDF</span>
+              <span className={styles.cvBadge}>CV </span>
               <span className={styles.cvMeta}>Updated 2026</span>
             </div>
 
@@ -48,7 +48,7 @@ export default function Home() {
             </div>
 
             <div className={styles.cvFooter}>
-              <span className={styles.cvHint}>Fast access • PDF format</span>
+              <span className={styles.cvHint}></span>
               <a
                 href="/cv"
                 download="Ulindu_Dakshitha_CV.pdf"
