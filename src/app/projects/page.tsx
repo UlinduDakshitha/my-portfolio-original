@@ -13,6 +13,7 @@ export default function Projects() {
       link: "https://github.com/UlinduDakshitha/smartbiz",
       delay: "delay-1",
     },
+    
     {
       title: "INKMATCH",
       type: "Individual",
