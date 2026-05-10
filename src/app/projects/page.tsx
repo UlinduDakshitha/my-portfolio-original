@@ -15,7 +15,7 @@ export default function Projects() {
     },
     {
       title: "INKMATCH",
-      type: "Individual (Ongoing)",
+      type: "Individual",
       date: "Feb 2026–Present",
       description:
         "A marketplace platform for users to discover tattoo artists and studios, browse portfolios, and book appointments. Features 4-tier role-based access control and scalable APIs for bookings and consultations.",
