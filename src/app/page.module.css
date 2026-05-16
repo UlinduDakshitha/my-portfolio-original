@@ -404,6 +404,34 @@
   line-height: 1.8;
 }
 
+.aboutProfile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.aboutContacts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem 1rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.6rem;
+}
+
+.smallHeading {
+  margin: 0.6rem 0 0.4rem 0;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.aboutList {
+  margin: 0.25rem 0 0 0;
+  padding-left: 1.2rem;
+  color: var(--text-secondary);
+}
+
 /* Certificates */
 .certificates {
   margin-top: 1.25rem;

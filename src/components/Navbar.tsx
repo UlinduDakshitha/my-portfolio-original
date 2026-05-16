@@ -69,17 +69,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className={styles.socialLinks}>
-          <a
-            href="https://www.linkedin.com/in/ulindu-dakshitha-bandara-6aa081303"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            className={styles.socialLink}
-          >
-            <img src="/linkedin.svg" alt="LinkedIn" width={20} height={20} />
-          </a>
-        </div>
+        {/* social links removed per user preference; LinkedIn shown on About page */}
 
         <button
           className={styles.mobileMenuBtn}
