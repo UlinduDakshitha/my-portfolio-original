@@ -15,11 +15,22 @@ export default function Home() {
           <h2 className={styles.subtitle}>Software Engineer</h2>
           <p className={styles.description}>
             Turning complex problems into elegant, scalable solutions using{" "}
-            <strong style={{ color: "var(--text-primary)" }}>Next.js</strong> &{" "}
-            <strong style={{ color: "var(--text-primary)" }}>
+          </p>
+
+          <div className={styles.techStackWrapper}>
+            <span className={`${styles.techBadge} ${styles.nextjsBadge}`}>
+              <span className={styles.techIcon}></span>
+              Next.js
+            </span>
+            <span className={styles.techSeparator}>&</span>
+            <span className={`${styles.techBadge} ${styles.springbootBadge}`}>
+              <span className={styles.techIcon}></span>
               Spring Boot
-            </strong>
-            . I am deeply passionate about pushing the boundaries of web
+            </span>
+          </div>
+
+          <p className={styles.description}>
+            I am deeply passionate about pushing the boundaries of web
             development by integrating{" "}
             <span className="gradient-text">AI/ML</span> and automating
             workflows through{" "}
