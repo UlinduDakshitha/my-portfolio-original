@@ -123,7 +123,7 @@ export default function About() {
                 </span>
               </li>
               <li>
-                <span className={styles.certIcon}>U</span>
+               
                 <span className={styles.certText}>
                   Git & GitHub for Beginners — <span>Udemy, 2025</span>
                 </span>
