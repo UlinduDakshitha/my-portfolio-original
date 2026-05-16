@@ -192,34 +192,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className={`${styles.section} container`}>
-        <div className={styles.sectionCard}>
-          <div className={styles.sectionHeader}>
-            <span className={styles.sectionIndex}>02</span>
-            <h2 className={styles.sectionTitle}>Projects</h2>
-          </div>
-          <p className={styles.sectionText}>
-            Explore selected work and practical experiments that mix UI polish,
-            product thinking, and technical depth.
-          </p>
-          {/* Removed direct navigation to /projects from homepage */}
-        </div>
-      </section>
-
-      <section id="contact" className={`${styles.section} container`}>
-        <div className={styles.sectionCard}>
-          <div className={styles.sectionHeader}>
-            <span className={styles.sectionIndex}>03</span>
-            <h2 className={styles.sectionTitle}>Get In Touch</h2>
-          </div>
-          <p className={styles.sectionText}>
-            If you have a project, collaboration, or opportunity in mind, feel
-            free to reach out. I&apos;m always open to interesting
-            conversations.
-          </p>
-          {/* Removed direct navigation to /contact from homepage */}
-        </div>
-      </section>
+      {/* Projects and Contact sections removed as requested */}
     </div>
   );
 }
