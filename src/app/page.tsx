@@ -113,6 +113,59 @@ export default function Home() {
             readable code, and interfaces that feel intentional from the first
             click.
           </p>
+          <div className={styles.certificates} id="about-certificates">
+            <h3 className={styles.certHeading}>Certificates</h3>
+            <div className={styles.certGrid}>
+              <div className={styles.certCard}>
+                <div className={styles.certCardBody}>
+                  <h4 className={styles.certCardTitle}>
+                    Full-Stack Web Development
+                  </h4>
+                  <p className={styles.certCardMeta}>Coursera • 2023</p>
+                </div>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.certAction}
+                >
+                  View
+                </a>
+              </div>
+
+              <div className={styles.certCard}>
+                <div className={styles.certCardBody}>
+                  <h4 className={styles.certCardTitle}>
+                    Spring Boot Microservices
+                  </h4>
+                  <p className={styles.certCardMeta}>Udemy • 2022</p>
+                </div>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.certAction}
+                >
+                  View
+                </a>
+              </div>
+
+              <div className={styles.certCard}>
+                <div className={styles.certCardBody}>
+                  <h4 className={styles.certCardTitle}>Next.js Mastery</h4>
+                  <p className={styles.certCardMeta}>Frontend Masters • 2024</p>
+                </div>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.certAction}
+                >
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

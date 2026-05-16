@@ -30,6 +30,23 @@ export default function Navbar() {
     { name: "Contact", href: "/#contact" },
   ];
 
+  function handleNavClick(e: any, href: string) {
+    // close mobile menu in all cases
+    setMobileOpen(false);
+
+    // If it's an in-page anchor and we're on the homepage, smooth-scroll instead of navigating
+    if (href.startsWith("/#") && pathname === "/") {
+      e.preventDefault();
+      const id = href.split("#")[1];
+      if (id) {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    }
+  }
+
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
       <div className={`container ${styles.navContainer}`}>
@@ -44,7 +61,7 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              onClick={() => setMobileOpen(false)}
+              onClick={(e) => handleNavClick(e, link.href)}
               className={`${styles.navLink} ${pathname === "/" && link.name === "Home" ? styles.active : ""}`}
             >
               {link.name}
