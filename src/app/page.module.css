@@ -432,6 +432,17 @@
   color: var(--text-secondary);
 }
 
+/* About page section separators */
+.aboutSection {
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.aboutList li {
+  margin-bottom: 0.55rem;
+}
+
 /* Certificates */
 .certificates {
   margin-top: 1.25rem;

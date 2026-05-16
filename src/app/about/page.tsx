@@ -24,30 +24,7 @@ export default function AboutPage() {
           </p>
         </section>
 
-        <section>
-          <h3 className={styles.smallHeading}>Contact</h3>
-          <div className={styles.aboutContacts}>
-            <div>
-              <strong>Email:</strong> ulindudakshitha001@gmail.com
-            </div>
-            <div>
-              <strong>Phone:</strong> +94 71 702 8242
-            </div>
-            <div>
-              <strong>Location:</strong> Colombo, Sri Lanka
-            </div>
-            <div>
-              <strong>LinkedIn:</strong>{" "}
-              <a
-                href="https://www.linkedin.com/in/ulindu-dakshitha-bandara-6aa081303"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ulindu-dakshitha-bandara-6aa081303
-              </a>
-            </div>
-          </div>
-        </section>
+        {/* Contact details removed from About page per request */}
 
         <section>
           <h3 className={styles.smallHeading}>Education</h3>
@@ -135,14 +112,7 @@ export default function AboutPage() {
           </p>
         </section>
 
-        <div style={{ marginTop: "1rem", display: "flex", gap: "0.8rem" }}>
-          <Link href="/cv" className="btn-primary">
-            Download CV
-          </Link>
-          <Link href="/" className="btn-secondary">
-            Back Home
-          </Link>
-        </div>
+        {/* Removed Download CV and Back Home controls per request */}
       </div>
     </div>
   );
