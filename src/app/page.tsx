@@ -27,14 +27,7 @@ export default function Home() {
             feel fast, modern, and easy to use.
           </p>
 
-          <div className={styles.actions}>
-            <Link href="/projects" className="btn-primary">
-              View My Work
-            </Link>
-            <Link href="/contact" className="btn-secondary">
-              Contact Me
-            </Link>
-          </div>
+          {/* action links removed per request */}
 
           <div className={styles.statsGrid}>
             <div className={`${styles.statCard} glass`}>
@@ -209,9 +202,7 @@ export default function Home() {
             Explore selected work and practical experiments that mix UI polish,
             product thinking, and technical depth.
           </p>
-          <Link href="/projects" className="btn-primary">
-            View All Projects
-          </Link>
+          {/* Removed direct navigation to /projects from homepage */}
         </div>
       </section>
 
@@ -226,9 +217,7 @@ export default function Home() {
             free to reach out. I&apos;m always open to interesting
             conversations.
           </p>
-          <Link href="/contact" className="btn-primary">
-            Contact Me
-          </Link>
+          {/* Removed direct navigation to /contact from homepage */}
         </div>
       </section>
     </div>
