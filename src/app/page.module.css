@@ -443,6 +443,55 @@
   margin-bottom: 0.55rem;
 }
 
+/* About hero + skills */
+.aboutHero {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1.25rem;
+  align-items: start;
+  margin-bottom: 0.65rem;
+}
+
+.sectionLead {
+  font-size: 1.06rem;
+  color: var(--text-secondary);
+  max-width: 56ch;
+}
+
+.skillPanel {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 0.9rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.035);
+}
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+.tag {
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  background: linear-gradient(
+    135deg,
+    rgba(6, 182, 212, 0.06),
+    rgba(59, 130, 246, 0.04)
+  );
+  border: 1px solid rgba(6, 182, 212, 0.08);
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 992px) {
+  .aboutHero {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Certificates */
 .certificates {
   margin-top: 1.25rem;

@@ -10,19 +10,35 @@ export default function AboutPage() {
       >
         <div className={styles.sectionHeader}>
           <span className={styles.sectionIndex}>01</span>
-          <h2 className={styles.sectionTitle}>About / CV</h2>
+          <h2 className={styles.sectionTitle}>About</h2>
         </div>
 
-        <section style={{ marginBottom: "1rem" }}>
-          <h3 className={styles.smallHeading}>Profile</h3>
-          <p className={styles.sectionText}>
-            Motivated Software Engineering undergraduate with strong academic
-            and hands-on experience in full-stack application development using
-            Java, Node.js, React.js, and modern web technologies. Passionate
-            about building scalable and efficient software solutions while
-            following secure coding and software engineering best practices.
-          </p>
-        </section>
+        <div className={styles.aboutHero}>
+          <div>
+            <p className={styles.sectionLead}>
+              Motivated Software Engineering undergraduate focused on building
+              robust, maintainable web applications. I enjoy designing clean
+              APIs with Spring Boot and shipping polished frontends with
+              Next.js.
+            </p>
+          </div>
+
+          <aside className={styles.skillPanel}>
+            <h4 className={styles.smallHeading}>Core Skills</h4>
+            <div className={styles.skillTags}>
+              <span className={styles.tag}>Java</span>
+              <span className={styles.tag}>Spring Boot</span>
+              <span className={styles.tag}>Next.js</span>
+              <span className={styles.tag}>React</span>
+              <span className={styles.tag}>Node.js</span>
+              <span className={styles.tag}>TypeScript</span>
+              <span className={styles.tag}>MySQL</span>
+              <span className={styles.tag}>MongoDB</span>
+              <span className={styles.tag}>REST APIs</span>
+              <span className={styles.tag}>Docker</span>
+            </div>
+          </aside>
+        </div>
 
         {/* Contact details removed from About page per request */}
 
@@ -67,32 +83,7 @@ export default function AboutPage() {
           </p>
         </section>
 
-        <section>
-          <h3 className={styles.smallHeading}>Key Projects</h3>
-          <ul className={styles.aboutList}>
-            <li>
-              <strong>SMARTBIZ</strong> — Full-stack ERP system with inventory,
-              customer records, and core business operations (Individual
-              project)
-            </li>
-            <li>
-              <strong>INKMATCH</strong> — Marketplace platform for artists and
-              studios with bookings and profiles (Individual, ongoing)
-            </li>
-            <li>
-              <strong>SULSCORE</strong> — University management system for
-              students and staff (Group ongoing)
-            </li>
-            <li>
-              <strong>PURE NATION</strong> — Community platform for
-              environmental issue reporting (Group project)
-            </li>
-            <li>
-              <strong>CEYLONCONNECT</strong> — Tourism platform with local Sri
-              Lankan destinations and services (Group project)
-            </li>
-          </ul>
-        </section>
+        {/* Projects section removed as requested */}
 
         <section>
           <h3 className={styles.smallHeading}>Certifications</h3>
