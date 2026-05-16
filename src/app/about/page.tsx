@@ -1,135 +1,147 @@
-import styles from "./page.module.css";
+import Link from "next/link";
+import styles from "../page.module.css";
 
-export default function About() {
+export default function AboutPage() {
   return (
-    <div className={`container section ${styles.aboutContainer}`}>
-      <div className={`${styles.header} animate-fade-in`}>
-        <h1 className="gradient-text">About Me</h1>
-        <p className={styles.intro}>
-          Motivated Software Engineering undergraduate blending full-stack web
-          development with a strong passion for Artificial Intelligence, Deep
-          Learning, and DevOps.
-        </p>
-      </div>
-
-      <div className={styles.grid}>
-        {/* Education & Experience */}
-        <div className={`${styles.column} animate-fade-in delay-1`}>
-          <div className={`${styles.card} glass hover-lift`}>
-            <h2 className={styles.cardTitle}>Education</h2>
-
-            <div className={styles.timelineItem}>
-              <div className={styles.timelineDot}></div>
-              <h3>BSc (Hons) in Software Engineering</h3>
-              <h4>Sabaragamuwa University of Sri Lanka</h4>
-              <span className={styles.date}>Oct 2023 — Present</span>
-            </div>
-
-            <div className={styles.timelineItem}>
-              <div className={styles.timelineDot}></div>
-              <h3>G.C.E. Advanced Level (Physical Science)</h3>
-              <h4>Maliyadeva College, Kurunegala</h4>
-              <span className={styles.date}>Jan 2019 — Aug 2021</span>
-            </div>
-          </div>
-
-          <div className={`${styles.card} glass hover-lift`}>
-            <h2 className={styles.cardTitle}>Experience</h2>
-
-            <div className={styles.timelineItem}>
-              <div className={styles.timelineDot}></div>
-              <h3>Full-Stack Development Trainee</h3>
-              <h4>ACPT – Academy of Computer Programming and Training</h4>
-              <span className={styles.date}>Jun 2025 — Present</span>
-              <p className={styles.desc}>
-                Delivered real-world training projects using Java Spring Boot,
-                React.js, MySQL, REST API development, and AWS deployment.
-              </p>
-            </div>
-
-            <div className={styles.timelineItem}>
-              <div className={styles.timelineDot}></div>
-              <h3>Event Volunteer</h3>
-              <h4>ComURS 2025, SUSL</h4>
-              <span className={styles.date}>Nov 2025</span>
-              <p className={styles.desc}>
-                Coordinated logistics and on-site operations for the annual
-                computing symposium.
-              </p>
-            </div>
-          </div>
+    <div className={`container ${styles.section}`}>
+      <div
+        className={styles.sectionCard}
+        style={{ maxWidth: 980, margin: "2rem auto" }}
+      >
+        <div className={styles.sectionHeader}>
+          <span className={styles.sectionIndex}>01</span>
+          <h2 className={styles.sectionTitle}>About / CV</h2>
         </div>
 
-        {/* Skills & Certifications */}
-        <div className={`${styles.column} animate-fade-in delay-2`}>
-          <div className={`${styles.card} glass hover-lift`}>
-            <h2 className={styles.cardTitle}>Technical Skills</h2>
+        <section style={{ marginBottom: "1rem" }}>
+          <h3 className={styles.smallHeading}>Profile</h3>
+          <p className={styles.sectionText}>
+            Motivated Software Engineering undergraduate with strong academic
+            and hands-on experience in full-stack application development using
+            Java, Node.js, React.js, and modern web technologies. Passionate
+            about building scalable and efficient software solutions while
+            following secure coding and software engineering best practices.
+          </p>
+        </section>
 
-            <div className={styles.skillGroup}>
-              <h3>Languages & Frameworks</h3>
-              <div className={styles.tags}>
-                <span>Java</span>
-                <span>JavaScript</span>
-                <span>TypeScript</span>
-                <span>Spring Boot</span>
-                <span>React.js</span>
-                <span>Next.js</span>
-                <span>Node.js</span>
-                <span>Express.js</span>
-              </div>
+        <section>
+          <h3 className={styles.smallHeading}>Contact</h3>
+          <div className={styles.aboutContacts}>
+            <div>
+              <strong>Email:</strong> ulindudakshitha001@gmail.com
             </div>
-
-            <div className={styles.skillGroup}>
-              <h3>Databases & Tools</h3>
-              <div className={styles.tags}>
-                <span>MySQL</span>
-                <span>MongoDB</span>
-                <span>Git / GitHub</span>
-                <span>REST APIs</span>
-                <span>AWS</span>
-                <span>Postman</span>
-              </div>
+            <div>
+              <strong>Phone:</strong> +94 71 702 8242
             </div>
-
-            <div className={styles.skillGroup}>
-              <h3>Core Interests</h3>
-              <div className={styles.tags}>
-                <span className={styles.highlightTag}>
-                  Artificial Intelligence (AI)
-                </span>
-                <span className={styles.highlightTag}>
-                  Machine Learning (ML)
-                </span>
-                <span className={styles.highlightTag}>Deep Learning (DL)</span>
-                <span className={styles.highlightTag}>DevOps</span>
-              </div>
+            <div>
+              <strong>Location:</strong> Colombo, Sri Lanka
+            </div>
+            <div>
+              <strong>LinkedIn:</strong>{" "}
+              <a
+                href="https://www.linkedin.com/in/ulindu-dakshitha-bandara-6aa081303"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ulindu-dakshitha-bandara-6aa081303
+              </a>
             </div>
           </div>
+        </section>
 
-          <div className={`${styles.card} glass hover-lift`}>
-            <h2 className={styles.cardTitle}> Certifications</h2>
-            <ul className={styles.certList}>
-              <li>
-                Postman API Fundamentals Student Expert —{" "}
-                <span>Postman, 2026</span>
-              </li>
-              <li>
-                Postman Essentials — <span>KodeKloud, 2026</span>
-              </li>
-              <li>
-                
-                <span className={styles.certText}>
-                  Critical Thinking in the AI Era — <span>HP LIFE, 2026</span>
-                </span>
-              </li>
-              <li>
-               
-                <span className={styles.certText}>
-                  Git & GitHub for Beginners — <span>Udemy, 2025</span>
-                </span>
-              </li>
-            </ul>
-          </div>
+        <section>
+          <h3 className={styles.smallHeading}>Education</h3>
+          <ul className={styles.aboutList}>
+            <li>
+              <strong>BSc (Hons) in Software Engineering</strong>, Sabaragamuwa
+              University of Sri Lanka — Belihuloya (Oct 2023 – Present)
+            </li>
+            <li>
+              <strong>G.C.E. Advanced Level — Physical Science Stream</strong>,
+              Maliyadeva College, Kurunegala (Jan 2019 – Aug 2021)
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 className={styles.smallHeading}>Professional Experience</h3>
+          <ul className={styles.aboutList}>
+            <li>
+              <strong>Full-Stack Development Trainee</strong>, ACPT — Academy of
+              Computer Programming and Training, Wadduwa (Jun 2023 – Present)
+              <div className={styles.sectionText}>
+                Completed a 6-month intensive program covering Java, Spring
+                Boot, React.js, MySQL, and full-stack development; delivered 3
+                real-world training projects and gained proficiency across the
+                web development lifecycle.
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 className={styles.smallHeading}>Technical Skills</h3>
+          <p className={styles.sectionText}>
+            Languages & Frameworks: Java | JavaScript | TypeScript | Spring Boot
+            | React.js | Next.js | Node.js | Express.js
+            <br />
+            Databases & Tools: MySQL | MongoDB | PostgreSQL | Sequelize | Prisma
+            | Git | GitHub | REST APIs | JWT | AWS | Postman
+          </p>
+        </section>
+
+        <section>
+          <h3 className={styles.smallHeading}>Key Projects</h3>
+          <ul className={styles.aboutList}>
+            <li>
+              <strong>SMARTBIZ</strong> — Full-stack ERP system with inventory,
+              customer records, and core business operations (Individual
+              project)
+            </li>
+            <li>
+              <strong>INKMATCH</strong> — Marketplace platform for artists and
+              studios with bookings and profiles (Individual, ongoing)
+            </li>
+            <li>
+              <strong>SULSCORE</strong> — University management system for
+              students and staff (Group ongoing)
+            </li>
+            <li>
+              <strong>PURE NATION</strong> — Community platform for
+              environmental issue reporting (Group project)
+            </li>
+            <li>
+              <strong>CEYLONCONNECT</strong> — Tourism platform with local Sri
+              Lankan destinations and services (Group project)
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 className={styles.smallHeading}>Certifications</h3>
+          <ul className={styles.aboutList}>
+            <li>Postman API Fundamentals Student Expert — Postman</li>
+            <li>Postman Essentials — KodeKloud</li>
+            <li>Critical Thinking in the AI Era — HP LIFE</li>
+            <li>Git & GitHub for Beginners — Udemy</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 className={styles.smallHeading}>Volunteer Experience</h3>
+          <p className={styles.sectionText}>
+            COMURS 2025 — Sabaragamuwa University of Sri Lanka — Program
+            Moderator (2025 Present)
+          </p>
+        </section>
+
+        <div style={{ marginTop: "1rem", display: "flex", gap: "0.8rem" }}>
+          <Link href="/cv" className="btn-primary">
+            Download CV
+          </Link>
+          <Link href="/" className="btn-secondary">
+            Back Home
+          </Link>
         </div>
       </div>
     </div>
