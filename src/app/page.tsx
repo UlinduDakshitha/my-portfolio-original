@@ -66,14 +66,38 @@ export default function Home() {
 
             <div className={styles.cvFooter}>
               <span className={styles.cvHint}>PDF download</span>
-              <a
-                href="/cv"
-                download="Ulindu_Dakshitha_CV.pdf"
-                className={styles.cvAction}
+              <div
+                style={{
+                  display: "flex",
+                  gap: "0.65rem",
+                  alignItems: "center",
+                }}
               >
-                <span className={styles.cvIcon}>↘</span>
-                <span>Download CV</span>
-              </a>
+                <a
+                  href="/cv"
+                  download="Ulindu_Dakshitha_CV.pdf"
+                  className={styles.cvAction}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className={styles.cvIcon}>↘</span>
+                  <span>Download CV</span>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/ulindu-dakshitha-bandara-6aa081303"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.certAction}
+                  aria-label="LinkedIn"
+                >
+                  <img
+                    src="/linkedin.svg"
+                    alt="LinkedIn"
+                    style={{ width: 18, height: 18 }}
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
