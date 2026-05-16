@@ -431,7 +431,39 @@
     font-size: 3.5rem;
   }
 }
+  }
 
+  /* Section Styles */
+  .section {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 6rem 0;
+    scroll-margin-top: 80px;
+  }
+
+  .sectionTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -1px;
+  }
+
+  .sectionText {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+  }
+
+  @media (max-width: 576px) {
 @media (max-width: 576px) {
   .title {
     font-size: 2.8rem;
