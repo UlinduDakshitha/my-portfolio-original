@@ -72,47 +72,36 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section id="about" className={`${styles.section} container`}>
+        <h2 className={styles.sectionTitle}>About Me</h2>
+        <p className={styles.sectionText}>
+          I&apos;m a passionate software engineer with experience in building
+          modern, scalable web applications. I enjoy turning ideas into clean,
+          usable products with strong attention to detail.
+        </p>
+      </section>
+
+      <section id="projects" className={`${styles.section} container`}>
+        <h2 className={styles.sectionTitle}>Projects</h2>
+        <p className={styles.sectionText}>
+          Explore some of my recent work and practical experiments. I focus on
+          useful solutions, clean interfaces, and solid engineering.
+        </p>
+        <Link href="/projects" className="btn-primary">
+          View All Projects
+        </Link>
+      </section>
+
+      <section id="contact" className={`${styles.section} container`}>
+        <h2 className={styles.sectionTitle}>Get In Touch</h2>
+        <p className={styles.sectionText}>
+          If you have a project, collaboration, or opportunity in mind, feel
+          free to reach out. I&apos;m always open to interesting conversations.
+        </p>
+        <Link href="/contact" className="btn-primary">
+          Contact Me
+        </Link>
+      </section>
     </div>
   );
 }
-
-{
-  /* About Section */
-}
-<section id="about" className={`${styles.section} container`}>
-  <h2 className={styles.sectionTitle}>About Me</h2>
-  <p className={styles.sectionText}>
-    I&apos;m a passionate software engineer with expertise in building scalable
-    web applications. With a strong foundation in full-stack development, I
-    specialize in creating elegant solutions using modern technologies like
-    Next.js and Spring Boot.
-  </p>
-</section>;
-
-{
-  /* Projects Section */
-}
-<section id="projects" className={`${styles.section} container`}>
-  <h2 className={styles.sectionTitle}>Projects</h2>
-  <p className={styles.sectionText}>
-    Check out some of my recent projects and work. I&apos;m always building and
-    experimenting with new technologies and ideas.
-  </p>
-  <Link href="/projects" className="btn-primary">
-    View All Projects
-  </Link>
-</section>;
-
-{
-  /* Contact Section */
-}
-<section id="contact" className={`${styles.section} container`}>
-  <h2 className={styles.sectionTitle}>Get In Touch</h2>
-  <p className={styles.sectionText}>
-    I&apos;m always interested in hearing about new projects and opportunities.
-    Feel free to reach out if you&apos;d like to collaborate or just say hello!
-  </p>
-  <Link href="/contact" className="btn-primary">
-    Contact Me
-  </Link>
-</section>;

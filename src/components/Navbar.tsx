@@ -1,8 +1,9 @@
 "use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
-import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -13,38 +14,26 @@ export default function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu when route changes
   useEffect(() => {
     setMobileOpen(false);
   }, [pathname]);
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Projects", path: "/projects" },
-    { name: "Contact", path: "/contact" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/#about" },
+    { name: "Projects", href: "/#projects" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
       <div className={`container ${styles.navContainer}`}>
         <Link href="/" className={styles.logo}>
-  const handleNavClick = (e, link) => {
-    if (pathname === "/" && link.name !== "Home") {
-      // On home page, scroll to section
-      e.preventDefault();
-      const sectionId = link.name.toLowerCase();
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-        setMobileOpen(false);
-      }
-    }
-  };
           <span className="gradient-text">Ulindu</span>.
         </Link>
 
@@ -54,32 +43,22 @@ export default function Navbar() {
           {navLinks.map((link) => (
             <Link
               key={link.name}
-              href={link.path}
-              className={`${styles.navLink} ${pathname === link.path ? styles.active : ""}`}
-            >
-            link.name === "Home" ? (
-            <Link
-              key={link.name}
-              href={link.path}
-              className={`${styles.navLink} ${pathname === link.path ? styles.active : ""}`}
+              href={link.href}
+              onClick={() => setMobileOpen(false)}
+              className={`${styles.navLink} ${pathname === "/" && link.name === "Home" ? styles.active : ""}`}
             >
               {link.name}
             </Link>
-            ) : (
-            <a
-            </Link>
-              href={pathname === "/" ? `#${link.name.toLowerCase()}` : link.path}
-              onClick={(e) => handleNavClick(e, link)}
-              className={`${styles.navLink} ${pathname === link.path ? styles.active : ""}`}
+          ))}
+        </div>
 
         <button
-            </a>
-            )
+          className={styles.mobileMenuBtn}
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
           <svg
-            xmlns="http://www.000000.com/"
+            xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             viewBox="0 0 24 24"
