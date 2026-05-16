@@ -10,6 +10,58 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  const scrollToTarget = (targetY: number, duration = 1100) => {
+    const startY = window.scrollY;
+    const distance = targetY - startY;
+    const startTime = performance.now();
+
+    const easeInOutCubic = (t: number) =>
+      t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
+    const animate = (currentTime: number) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      window.scrollTo(0, startY + distance * easeInOutCubic(progress));
+
+      if (progress < 1) {
+        window.requestAnimationFrame(animate);
+      }
+    };
+
+    window.requestAnimationFrame(animate);
+  };
+
+  const handleNavClick = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+    name: string,
+  ) => {
+    if (pathname !== "/") {
+      return;
+    }
+
+    if (name === "Home") {
+      event.preventDefault();
+      setMobileOpen(false);
+      scrollToTarget(0, 900);
+      return;
+    }
+
+    const targetId = name.toLowerCase();
+    const targetElement = document.getElementById(targetId);
+
+    if (!targetElement) {
+      return;
+    }
+
+    event.preventDefault();
+    setMobileOpen(false);
+
+    const offsetTop =
+      targetElement.getBoundingClientRect().top + window.scrollY - 80;
+    scrollToTarget(offsetTop, 1200);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -44,7 +96,7 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              onClick={() => setMobileOpen(false)}
+              onClick={(event) => handleNavClick(event, link.href, link.name)}
               className={`${styles.navLink} ${pathname === "/" && link.name === "Home" ? styles.active : ""}`}
             >
               {link.name}
