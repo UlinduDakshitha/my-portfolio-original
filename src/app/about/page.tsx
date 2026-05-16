@@ -33,17 +33,7 @@ export default function AboutPage() {
               robust, maintainable web applications. I design clean APIs with
               Spring Boot and polished frontends with Next.js.
             </p>
-            <div className={styles.contactRow}>
-              <a href="/cv" className={styles.portfolioLink}>
-                Download CV
-              </a>
-              <a
-                href="https://www.linkedin.com/in/"
-                className={styles.portfolioLink}
-              >
-                LinkedIn
-              </a>
-            </div>
+            {/* contact buttons intentionally removed for a cleaner CV presentation */}
           </div>
         </div>
 
