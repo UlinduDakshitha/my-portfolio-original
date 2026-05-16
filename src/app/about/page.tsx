@@ -117,7 +117,7 @@ export default function About() {
                 Postman Essentials — <span>KodeKloud, 2026</span>
               </li>
               <li>
-                <span className={styles.certIcon}>U</span>
+                
                 <span className={styles.certText}>
                   Critical Thinking in the AI Era — <span>HP LIFE, 2026</span>
                 </span>
