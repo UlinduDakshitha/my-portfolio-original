@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styles from "../page.module.css";
 
 export default function AboutPage() {
@@ -11,6 +10,9 @@ export default function AboutPage() {
         <div className={styles.sectionHeader}>
           <span className={styles.sectionIndex}>01</span>
           <h2 className={styles.sectionTitle}>About</h2>
+          <p className={styles.sectionSubtitle}>
+            Software engineer — Next.js & Spring Boot · Full-stack developer
+          </p>
         </div>
 
         <div className={styles.aboutHero}>
@@ -24,6 +26,13 @@ export default function AboutPage() {
           </div>
 
           <aside className={styles.skillPanel}>
+            <div className={styles.avatarWrap}>
+              <img
+                src="/profile.jpg"
+                alt="Ulindu"
+                className={styles.aboutAvatar}
+              />
+            </div>
             <h4 className={styles.smallHeading}>Core Skills</h4>
             <div className={styles.skillTags}>
               <span className={styles.tag}>Java</span>
@@ -42,7 +51,7 @@ export default function AboutPage() {
 
         {/* Contact details removed from About page per request */}
 
-        <section>
+        <section className={styles.aboutSection}>
           <h3 className={styles.smallHeading}>Education</h3>
           <ul className={styles.aboutList}>
             <li>
@@ -56,7 +65,7 @@ export default function AboutPage() {
           </ul>
         </section>
 
-        <section>
+        <section className={styles.aboutSection}>
           <h3 className={styles.smallHeading}>Professional Experience</h3>
           <ul className={styles.aboutList}>
             <li>
@@ -72,9 +81,9 @@ export default function AboutPage() {
           </ul>
         </section>
 
-        <section>
+        <section className={styles.aboutSection}>
           <h3 className={styles.smallHeading}>Technical Skills</h3>
-          <p className={styles.sectionText}>
+          <p className={`${styles.sectionText} ${styles.fadeIn}`}>
             Languages & Frameworks: Java | JavaScript | TypeScript | Spring Boot
             | React.js | Next.js | Node.js | Express.js
             <br />
@@ -85,7 +94,7 @@ export default function AboutPage() {
 
         {/* Projects section removed as requested */}
 
-        <section>
+        <section className={styles.aboutSection}>
           <h3 className={styles.smallHeading}>Certifications</h3>
           <ul className={styles.aboutList}>
             <li>Postman API Fundamentals Student Expert — Postman</li>
@@ -95,7 +104,7 @@ export default function AboutPage() {
           </ul>
         </section>
 
-        <section>
+        <section className={styles.aboutSection}>
           <h3 className={styles.smallHeading}>Volunteer Experience</h3>
           <p className={styles.sectionText}>
             COMURS 2025 — Sabaragamuwa University of Sri Lanka — Program
