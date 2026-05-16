@@ -25,6 +25,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
     { name: "Projects", href: "/projects" },
     { name: "Contact", href: "/contact" },
   ];
@@ -61,7 +62,7 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className={`${styles.navLink} ${pathname === "/" && link.name === "Home" ? styles.active : ""}`}
+              className={`${styles.navLink} ${pathname === link.href ? styles.active : ""}`}
             >
               {link.name}
             </Link>

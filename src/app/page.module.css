@@ -461,6 +461,25 @@
   margin-right: auto;
 }
 
+.toc {
+  display: flex;
+  gap: 0.6rem;
+  margin: 0.6rem 0 1rem 0;
+  flex-wrap: wrap;
+}
+.tocLink {
+  padding: 0.45rem 0.7rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 700;
+}
+.tocLink:hover {
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--text-primary);
+}
+
 /* About page section separators */
 .aboutSection {
   border-top: 1px solid rgba(255, 255, 255, 0.03);
