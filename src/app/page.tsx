@@ -24,20 +24,7 @@ export default function Home() {
 
           {/* action links removed per request */}
 
-          <div className={styles.statsGrid}>
-            <div className={`${styles.statCard} glass`}>
-              <span className={styles.statValue}>Full-Stack</span>
-              <span className={styles.statLabel}>Web apps and APIs</span>
-            </div>
-            <div className={`${styles.statCard} glass`}>
-              <span className={styles.statValue}>AI/ML</span>
-              <span className={styles.statLabel}>Experimentation mindset</span>
-            </div>
-            <div className={`${styles.statCard} glass`}>
-              <span className={styles.statValue}>DevOps</span>
-              <span className={styles.statLabel}>Automation workflows</span>
-            </div>
-          </div>
+          {/* stat cards removed as requested */}
 
           <div className={`${styles.cvCard} glass`}>
             <div className={styles.cvTopline}>
