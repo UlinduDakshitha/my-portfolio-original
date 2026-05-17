@@ -104,6 +104,19 @@
   margin-bottom: 0.5rem;
 }
 
+/* inline highlights for tech terms */
+.inlineStrong {
+  color: var(--text-primary);
+  font-weight: 800;
+  margin: 0 0.18rem;
+}
+
+.inlineAccent {
+  color: var(--accent-cyan);
+  font-weight: 800;
+  margin: 0 0.18rem;
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;

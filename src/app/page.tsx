@@ -16,10 +16,13 @@ export default function Home() {
           <h2 className={styles.subtitle}>Software Engineer</h2>
 
           <p className={styles.description}>
-            I build clean, scalable digital products with{" "}
-            <strong>Next.js</strong>, <strong>Spring Boot</strong>, and a focus
-            on thoughtful UX. I like turning complex ideas into interfaces that
-            feel fast, modern, and easy to use.
+            Turning complex problems into elegant, scalable solutions using
+            <span className={styles.inlineStrong}> Next.js</span> &amp;
+            <span className={styles.inlineStrong}> Spring Boot</span>. I am
+            deeply passionate about pushing the boundaries of web development by
+            integrating <span className={styles.inlineAccent}>AI/ML</span> and
+            automating workflows through{" "}
+            <span className={styles.inlineAccent}>DevOps</span>.
           </p>
 
           {/* action links removed per request */}
