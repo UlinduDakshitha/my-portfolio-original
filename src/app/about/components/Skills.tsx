@@ -4,13 +4,15 @@ const skills = [
   "Java",
   "Spring Boot",
   "Next.js",
-  "React",
+  "React.js",
   "Node.js",
   "TypeScript",
   "MySQL",
   "MongoDB",
   "REST APIs",
-  "Docker",
+  "JavaScript",
+  "HTML/CSS",
+  "Tailwind CSS"
 ];
 
 export default function Skills() {
