@@ -31,8 +31,7 @@ export default function Home() {
 
           <div className={`${styles.cvCard} glass`}>
             <div className={styles.cvTopline}>
-              <span className={styles.cvBadge}>CV</span>
-              <span className={styles.cvMeta}>Fast overview of my work</span>
+              
             </div>
 
             <div className={styles.cvCopy}>
@@ -43,7 +42,7 @@ export default function Home() {
             </div>
 
             <div className={styles.cvFooter}>
-              <span className={styles.cvHint}>PDF download</span>
+            
               <div
                 style={{
                   display: "flex",
