@@ -15,10 +15,9 @@ export default function AboutPage() {
         style={{ maxWidth: 980, margin: "2rem auto" }}
       >
         <div className={styles.sectionHeader}>
-          <span className={styles.sectionIndex}>01</span>
-          <h2 className={styles.sectionTitle}>About</h2>
+         
           <p className={styles.sectionSubtitle}>
-            Software engineer — Next.js & Spring Boot · Full-stack developer
+            Software engineer 
           </p>
         </div>
 
