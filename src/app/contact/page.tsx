@@ -1,4 +1,5 @@
 import styles from "./page.module.css";
+import ContactForm from "./ContactForm";
 
 export default function Contact() {
   return (
@@ -61,6 +62,10 @@ export default function Contact() {
             <h3>GitHub</h3>
             <p>github.com/UlinduDakshitha</p>
           </a>
+        </div>
+
+        <div className={styles.formWrap}>
+          <ContactForm />
         </div>
       </div>
     </div>
