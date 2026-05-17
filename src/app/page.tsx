@@ -89,13 +89,6 @@ export default function Home() {
                 style={{ objectFit: "cover", borderRadius: "30px" }}
                 priority
               />
-              <div className={styles.photoOverlay}>
-                <span className={styles.overlayBadge}>Software Engineer</span>
-                <p>
-                  Building polished, reliable interfaces with modern full-stack
-                  tooling.
-                </p>
-              </div>
             </div>
           </div>
         </div>
