@@ -17,7 +17,7 @@ export default function Hero() {
       <div>
         <h3 className={styles.profileName}>Ulindu Dakshitha</h3>
         <p className={styles.profileRole}>
-          Software Engineer · Next.js & Spring Boot
+          Software Engineer
         </p>
         <p className={styles.sectionLead} style={{ marginTop: 6 }}>
           Motivated Software Engineering undergraduate focused on building

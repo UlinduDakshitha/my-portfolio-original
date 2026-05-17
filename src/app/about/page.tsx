@@ -15,10 +15,6 @@ export default function AboutPage() {
         style={{ maxWidth: 980, margin: "2rem auto" }}
       >
         <div className={styles.sectionHeader}>
-         
-          <p className={styles.sectionSubtitle}>
-            Software engineer 
-          </p>
         </div>
 
         <Hero />
