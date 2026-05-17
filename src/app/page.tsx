@@ -8,11 +8,6 @@ export default function Home() {
     <div className={styles.homeContainer}>
       <section className={`${styles.hero} container`}>
         <div className={styles.heroContent}>
-          <div className={styles.eyebrow}>
-            <span className={styles.eyebrowDot}></span>
-            Available for new projects
-          </div>
-
           <h1 className={styles.title}>
             Hi, I&apos;m <br />
             <span className="gradient-text">Ulindu</span>
