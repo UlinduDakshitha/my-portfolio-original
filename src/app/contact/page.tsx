@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div className={`container section ${styles.contactContainer}`}>
       <div className={`${styles.header} animate-fade-in`}>
-        <h1 className="gradient-text">Let&apos;s Connect</h1>
+        <h1>Contact Me</h1>
         <p className={styles.intro}>
           I&apos;m actively seeking a software engineering internship to
           contribute to innovative teams. If you have an opportunity or just
@@ -64,6 +64,7 @@ export default function Contact() {
           </a>
         </div>
 
+        <h2 className={styles.formTitle}>Get In Touch</h2>
         <div className={styles.formWrap}>
           <ContactForm />
         </div>

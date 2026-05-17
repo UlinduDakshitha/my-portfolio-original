@@ -6,6 +6,7 @@ import styles from "./page.module.css";
 export default function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [status, setStatus] = useState<null | {
@@ -16,7 +17,7 @@ export default function ContactForm() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setStatus(null);
-    if (!name || !email || !message) {
+    if (!name || !email || !message || !subject) {
       setStatus({ type: "error", message: "Please fill all fields." });
       return;
     }
@@ -26,13 +27,14 @@ export default function ContactForm() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, message }),
+        body: JSON.stringify({ name, email, subject, message }),
       });
 
       if (res.ok) {
         setStatus({ type: "success", message: "Message sent — thank you!" });
         setName("");
         setEmail("");
+        setSubject("");
         setMessage("");
       } else {
         const data = await res.json();
@@ -67,6 +69,13 @@ export default function ContactForm() {
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
+
+      <input
+        className={styles.inputFull}
+        placeholder="Subject"
+        value={subject}
+        onChange={(e) => setSubject(e.target.value)}
+      />
 
       <label className={styles.srOnly}>Message</label>
       <textarea

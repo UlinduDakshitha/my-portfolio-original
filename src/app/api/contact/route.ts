@@ -4,8 +4,8 @@ import { NextResponse } from "next/server";
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { name, email, message } = body;
-    if (!name || !email || !message) {
+    const { name, email, subject, message } = body;
+    if (!name || !email || !message || !subject) {
       return NextResponse.json({ error: "Missing fields" }, { status: 400 });
     }
 
@@ -29,13 +29,13 @@ export async function POST(req: Request) {
       auth: { user, pass },
     });
 
-    const subject = `Portfolio message from ${name}`;
-    const text = `From: ${name} <${email}>\n\n${message}`;
+    const subjectLine = `[Portfolio] ${subject} — from ${name}`;
+    const text = `From: ${name} <${email}>\nSubject: ${subject}\n\n${message}`;
 
     await transporter.sendMail({
       from: user,
       to,
-      subject,
+      subject: subjectLine,
       text,
       replyTo: email,
     });
