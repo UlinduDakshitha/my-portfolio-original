@@ -1,4 +1,5 @@
 import styles from "../page.module.css";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
@@ -17,10 +18,13 @@ export default function AboutPage() {
 
         <div className={styles.simpleHero}>
           <div className={styles.avatarWrap}>
-            <img
+            <Image
               src="/profile.jpg"
               alt="Ulindu"
+              width={112}
+              height={112}
               className={styles.aboutAvatar}
+              priority
             />
           </div>
           <div>
@@ -36,6 +40,23 @@ export default function AboutPage() {
             {/* contact buttons intentionally removed for a cleaner CV presentation */}
           </div>
         </div>
+        <nav className={styles.toc} aria-label="About contents">
+          <a href="#education" className={styles.tocLink}>
+            Education
+          </a>
+          <a href="#experience" className={styles.tocLink}>
+            Experience
+          </a>
+          <a href="#skills" className={styles.tocLink}>
+            Skills
+          </a>
+          <a href="#certifications" className={styles.tocLink}>
+            Certifications
+          </a>
+          <a href="#volunteer" className={styles.tocLink}>
+            Volunteer
+          </a>
+        </nav>
 
         <section className={styles.aboutSection}>
           <h3 className={styles.smallHeading}>Education</h3>
@@ -67,12 +88,26 @@ export default function AboutPage() {
           </ul>
         </section>
 
-        <section className={styles.aboutSection}>
+        <section id="skills" className={styles.aboutSection}>
           <h3 className={styles.smallHeading}>Technical Skills</h3>
-          <p className={`${styles.sectionText} ${styles.fadeIn}`}>
-            Java · Spring Boot · Next.js · React · Node.js · TypeScript · MySQL
-            · MongoDB · REST APIs · Docker
-          </p>
+          <div className={styles.skillPills}>
+            {[
+              "Java",
+              "Spring Boot",
+              "Next.js",
+              "React",
+              "Node.js",
+              "TypeScript",
+              "MySQL",
+              "MongoDB",
+              "REST APIs",
+              "Docker",
+            ].map((s) => (
+              <span key={s} className={styles.skillPill}>
+                {s}
+              </span>
+            ))}
+          </div>
         </section>
 
         <section className={styles.aboutSection}>
@@ -93,23 +128,6 @@ export default function AboutPage() {
           </p>
         </section>
 
-        <nav className={styles.toc} aria-label="About contents">
-          <a href="#education" className={styles.tocLink}>
-            Education
-          </a>
-          <a href="#experience" className={styles.tocLink}>
-            Experience
-          </a>
-          <a href="#skills" className={styles.tocLink}>
-            Skills
-          </a>
-          <a href="#certifications" className={styles.tocLink}>
-            Certifications
-          </a>
-          <a href="#volunteer" className={styles.tocLink}>
-            Volunteer
-          </a>
-        </nav>
         {/* Removed Download CV and Back Home controls per request */}
       </div>
     </div>
