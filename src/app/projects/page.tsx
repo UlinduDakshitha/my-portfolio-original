@@ -10,7 +10,7 @@ export default function Projects() {
         "A full-stack ERP system built as sole developer, managing inventory, customer records, and core business operations across 5+ integrated modules. Includes secure JWT authentication and 20+ RESTful API endpoints achieving full CRUD coverage.",
       role: "Fullstack Developer",
       tech: ["React.js", "Java Spring Boot", "MySQL"],
-      link: "https://github.com/UlinduDakshitha/smartbiz",
+      link: "https://github.com/stars/UlinduDakshitha/lists/smart-biz",
       delay: "delay-1",
     },
     {
@@ -21,7 +21,7 @@ export default function Projects() {
         "A marketplace platform for users to discover tattoo artists and studios, browse portfolios, and book appointments. Features 4-tier role-based access control and scalable APIs for bookings and consultations.",
       role: "Fullstack Developer",
       tech: ["Next.js", "TypeScript", "Java Spring Boot", "MySQL"],
-      link: "https://github.com/UlinduDakshitha/inkmatch",
+      link: "https://github.com/stars/UlinduDakshitha/lists/inkmatch",
       delay: "delay-2",
     },
     {
@@ -32,7 +32,7 @@ export default function Projects() {
         "A university-level financial aid management system serving 100+ students. Developed collaboratively in an Agile team of 5 using Git feature-branch workflows and regular code reviews.",
       role: "Backend Developer",
       tech: ["Next.js", "Node.js", "Express.js", "MySQL"],
-      link: "https://github.com/UlinduDakshitha/suslcore",
+      link: "https://github.com/orgs/SUSLCore/repositories",
       delay: "delay-3",
     },
     {
@@ -43,7 +43,7 @@ export default function Projects() {
         "A community platform for Sri Lankans to report environmental issues and coordinate clean-up activities. Includes RESTful APIs for issue tracking and user authentication with a fully responsive UI.",
       role: "Fullstack Developer",
       tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Sequelize"],
-      link: "https://github.com/UlinduDakshitha/pure-nation",
+      link: "https://github.com/stars/UlinduDakshitha/lists/pure-nation",
       delay: "delay-4",
     },
     {
@@ -54,7 +54,7 @@ export default function Projects() {
         "A tourism platform connecting travelers with local Sri Lankan destinations and services. Featuring dynamic content management with Prisma ORM and an optimized, responsive interface.",
       role: "Frontend Lead",
       tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Prisma"],
-      link: "https://github.com/UlinduDakshitha/ceylonconnect",
+      link: "https://github.com/CeylonConnect",
       delay: "delay-1",
     },
   ];
